@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-fr="Visite Guidée La Rochelle en Anglais – Expérience Thématique &amp; Bilingue" data-en="Guided Tour La Rochelle – Unique Themed &amp; Bilingual Experiences">Visite Guidée La Rochelle en Anglais – Expérience Thématique &amp; Bilingue</title>
+<meta name="description" data-fr="Découvrez La Rochelle autrement avec une guide bilingue passionnée. Pirates, flore maritime, histoire des femmes. Visites thématiques uniques, petits groupes. Réservez." data-en="Discover La Rochelle like never before with a passionate bilingual guide. Pirates, maritime flora, women's history. Unique themed tours, small groups. Book now." content="Découvrez La Rochelle autrement avec une guide bilingue passionnée. Visites thématiques uniques, petits groupes. Réservez.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#1C3A5E;--ink-light:#3D5A7A;--ink-muted:#7A8FA6;--gold:#B8935A;--gold-pale:#F5EDE0;--white:#FFFFFF;--stone:#F7F5F2;--stone-mid:#EEEBe7;--porcelain:#E8EFF7;--border:#DDD9D4;--border-ink:#C5D0DC;--serif:'DM Serif Display',Georgia,serif;--sans:'DM Sans',system-ui,sans-serif;--r-sm:6px;--r-md:12px;--r-lg:20px;--sh-sm:0 1px 4px rgba(28,58,94,.06),0 4px 16px rgba(28,58,94,.06);--sh-md:0 4px 12px rgba(28,58,94,.08),0 12px 40px rgba(28,58,94,.10);--sh-lg:0 8px 24px rgba(28,58,94,.10),0 24px 72px rgba(28,58,94,.14);--mw:1080px;--pad-v:clamp(72px,9vw,116px);--pad-h:clamp(20px,5vw,56px)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:var(--sans);font-weight:400;line-height:1.68;color:var(--ink);background:var(--white);-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:var(--mw);margin:0 auto;padding:0 var(--pad-h)}
+.sec{padding:var(--pad-v) var(--pad-h);max-width:var(--mw);margin:0 auto}
+.eyebrow{display:inline-block;font-family:var(--sans);font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-bottom:18px}
+.d1{font-family:var(--serif);font-size:clamp(40px,6vw,72px);font-weight:400;line-height:1.06;letter-spacing:-.02em;color:var(--ink)}
+.d2{font-family:var(--serif);font-size:clamp(28px,4vw,50px);font-weight:400;line-height:1.14;letter-spacing:-.02em;color:var(--ink)}
+.d3{font-family:var(--serif);font-size:clamp(20px,2.5vw,30px);font-weight:400;line-height:1.25;color:var(--ink)}
+.body-lg{font-size:18px;line-height:1.7;color:var(--ink-light)}
+.body-md{font-size:16px;line-height:1.7;color:var(--ink-light)}
+.body-sm{font-size:14px;line-height:1.65;color:var(--ink-muted)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:15px 30px;border-radius:50px;font-family:var(--sans);font-weight:500;font-size:15px;border:none;cursor:pointer;transition:transform .18s,box-shadow .18s,opacity .18s;text-decoration:none;white-space:nowrap}
+.btn:hover{transform:translateY(-2px)}
+.btn-gold{background:var(--gold);color:var(--white);box-shadow:0 3px 14px rgba(184,147,90,.35)}
+.btn-gold:hover{box-shadow:0 6px 24px rgba(184,147,90,.45);opacity:.95}
+.btn-ink{background:var(--ink);color:var(--white);box-shadow:0 3px 14px rgba(28,58,94,.25)}
+.btn-ink:hover{box-shadow:0 6px 24px rgba(28,58,94,.35)}
+.btn-ghost{background:transparent;color:var(--ink);border:1.5px solid var(--border)}
+.btn-ghost:hover{border-color:var(--ink);background:var(--stone)}
+
+/* NAV */
+#nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(255,255,255,.93);backdrop-filter:blur(14px);border-bottom:1px solid var(--border);height:64px;display:flex;align-items:center;padding:0 var(--pad-h)}
+.nav-inner{max-width:var(--mw);width:100%;margin:0 auto;display:flex;align-items:center;justify-content:space-between}
+.logo{font-family:var(--serif);font-size:19px;color:var(--ink);letter-spacing:-.01em}
+.logo em{color:var(--gold);font-style:italic}
+.nav-right{display:flex;gap:12px;align-items:center}
+.nav-link{font-size:14px;font-weight:500;color:var(--ink-light);transition:color .15s;display:none}
+.nav-link:hover{color:var(--ink)}
+@media(min-width:640px){.nav-link{display:block}}
+.nav-cta{padding:10px 22px;font-size:14px}
+
+/* LANG SWITCHER */
+.lang-switcher{display:flex;align-items:center;gap:2px;background:var(--stone);border:1px solid var(--border);border-radius:50px;padding:3px;margin-right:4px}
+.lang-btn{display:flex;align-items:center;gap:5px;padding:5px 10px;border-radius:50px;border:none;background:transparent;cursor:pointer;font-family:var(--sans);font-size:12px;font-weight:600;color:var(--ink-muted);transition:background .15s,color .15s;letter-spacing:.04em}
+.lang-btn .flag{font-size:16px;line-height:1}
+.lang-btn.active{background:var(--white);color:var(--ink);box-shadow:0 1px 4px rgba(28,58,94,.12)}
+.lang-btn:hover:not(.active){color:var(--ink)}
+
+/* HERO */
+#hero{min-height:100vh;padding-top:64px;background:var(--white);display:flex;flex-direction:column;justify-content:center}
+.hero-grid{max-width:var(--mw);margin:0 auto;padding:clamp(60px,8vw,100px) var(--pad-h);display:grid;grid-template-columns:1fr 420px;gap:64px;align-items:center}
+.hero-left .d1{margin-bottom:24px}
+.hero-left .d1 em{font-style:italic;color:var(--gold)}
+.hero-left .body-lg{max-width:480px;margin-bottom:36px}
+.btn-group{display:flex;flex-wrap:wrap;gap:12px}
+.hero-proof{display:flex;flex-wrap:wrap;gap:28px;margin-top:48px;padding-top:32px;border-top:1px solid var(--border)}
+.proof-item{display:flex;align-items:center;gap:9px;font-size:13px;font-weight:500;color:var(--ink-muted)}
+.proof-dot{width:6px;height:6px;border-radius:50%;background:var(--gold);flex-shrink:0}
+
+/* TICKET */
+.ticket{background:var(--white);border:1px solid var(--border);border-radius:var(--r-lg);box-shadow:var(--sh-lg);overflow:hidden;transform:rotate(1.5deg);transition:transform .4s}
+.ticket:hover{transform:rotate(0deg) translateY(-4px)}
+.ticket-top{background:var(--ink);padding:28px 28px 24px;position:relative}
+.ticket-eyebrow{font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:8px}
+.ticket-title{font-family:var(--serif);font-size:22px;color:var(--white);font-style:italic;line-height:1.25}
+.ticket-accent{position:absolute;top:20px;right:24px;font-size:38px;opacity:.25}
+.ticket-perforation{display:flex;align-items:center}
+.ticket-perforation::before,.ticket-perforation::after{content:'';flex:1;border-top:1.5px dashed var(--border)}
+.perf-circle{width:22px;height:22px;background:var(--stone);border:1px solid var(--border);border-radius:50%;flex-shrink:0;position:relative;z-index:1}
+.perf-circle.left{margin-left:-11px}
+.perf-circle.right{margin-right:-11px}
+.ticket-body{padding:22px 28px 26px}
+.ticket-row{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--stone-mid)}
+.ticket-row:last-child{border-bottom:none}
+.tk-label{font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-muted);margin-bottom:3px}
+.tk-val{font-size:15px;font-weight:500;color:var(--ink)}
+.ticket-footer{background:var(--gold-pale);padding:16px 28px;display:flex;align-items:center;justify-content:space-between}
+.tk-price{font-family:var(--serif);font-size:26px;color:var(--gold)}
+.tk-price small{font-family:var(--sans);font-size:14px;color:var(--ink-muted);font-weight:400}
+.tk-cta-t{font-size:12px;font-weight:600;color:var(--gold);letter-spacing:.08em;text-transform:uppercase}
+.ticket-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+.ttab{padding:6px 14px;border-radius:50px;border:1.5px solid var(--border);background:var(--white);font-size:12px;font-weight:500;color:var(--ink-muted);cursor:pointer;transition:all .15s;user-select:none}
+.ttab.active,.ttab:hover{border-color:var(--ink);background:var(--ink);color:var(--white)}
+
+/* STATS BAR */
+#stats-bar{background:var(--stone);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.stats-inner{max-width:var(--mw);margin:0 auto;padding:32px var(--pad-h);display:flex;justify-content:space-around;flex-wrap:wrap;gap:28px}
+.stat{text-align:center}
+.stat-n{font-family:var(--serif);font-size:clamp(28px,4vw,42px);color:var(--ink);line-height:1;margin-bottom:6px}
+.stat-n em{color:var(--gold);font-style:italic}
+.stat-l{font-size:13px;color:var(--ink-muted)}
+
+/* PROBLEM */
+#problem{background:var(--white)}
+.problem-intro{max-width:640px;margin-bottom:56px}
+.problem-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:var(--border);border-radius:var(--r-md);overflow:hidden}
+.pain{background:var(--white);padding:36px 32px;transition:background .2s}
+.pain:hover{background:var(--stone)}
+.pain-mark{width:32px;height:32px;border:1.5px solid var(--border);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:15px;margin-bottom:18px;color:var(--ink-muted)}
+.pain h3{font-family:var(--serif);font-size:18px;font-weight:400;color:var(--ink);margin-bottom:10px;line-height:1.3}
+.pain p{font-size:15px;color:var(--ink-muted);line-height:1.65}
+
+/* QUOTE */
+.quote-bloc{background:var(--porcelain);border-left:3px solid var(--gold);padding:clamp(40px,6vw,72px) clamp(28px,5vw,80px);text-align:center}
+.q-text{font-family:var(--serif);font-style:italic;font-size:clamp(20px,3vw,32px);color:var(--ink);line-height:1.45;max-width:680px;margin:0 auto 16px}
+.q-author{font-size:13px;color:var(--gold);font-weight:600;letter-spacing:.12em;text-transform:uppercase}
+
+/* SOLUTION */
+#solution{background:var(--stone)}
+.sol-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
+.sol-img{border-radius:var(--r-lg);overflow:hidden;aspect-ratio:4/5;background:linear-gradient(to top,rgba(28,58,94,.55) 0%,transparent 55%),url('https://images.unsplash.com/photo-1537953773345-d172ccf13cf1?w=900&q=85') center/cover;box-shadow:var(--sh-md);position:relative}
+.sol-img-caption{position:absolute;bottom:0;left:0;right:0;padding:24px;background:linear-gradient(transparent,rgba(28,58,94,.7))}
+.sol-img-caption p{font-size:13px;color:rgba(255,255,255,.85)}
+.sol-img-caption strong{display:block;font-size:16px;color:#fff;font-family:var(--serif);font-weight:400;margin-bottom:4px}
+.sol-text h2{margin-bottom:20px}
+.sol-text p{margin-bottom:18px}
+.sol-list{list-style:none;margin:28px 0 36px}
+.sol-list li{display:flex;align-items:flex-start;gap:14px;padding:14px 0;border-bottom:1px solid var(--border);font-size:15px;color:var(--ink-light)}
+.sol-list li:first-child{border-top:1px solid var(--border)}
+.sol-check{width:20px;height:20px;border-radius:50%;background:var(--gold-pale);border:1.5px solid var(--gold);display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:11px;flex-shrink:0;margin-top:2px;font-weight:700}
+
+/* BENEFITS */
+#benefits{background:var(--white)}
+.ben-header{max-width:580px;margin-bottom:56px}
+.ben-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.ben{border:1px solid var(--border);border-radius:var(--r-md);padding:32px 28px 28px;transition:box-shadow .2s,border-color .2s}
+.ben:hover{box-shadow:var(--sh-md);border-color:var(--border-ink)}
+.ben-icon{font-size:28px;margin-bottom:18px;display:block;line-height:1}
+.ben h3{font-family:var(--serif);font-size:18px;font-weight:400;color:var(--ink);margin-bottom:10px;line-height:1.3}
+.ben p{font-size:14px;color:var(--ink-muted);line-height:1.65}
+
+/* TOURS */
+.tours-header{max-width:580px;margin:0 auto 56px;text-align:center}
+.tour-list{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.tour{background:var(--white);border:1px solid var(--border);border-radius:var(--r-md);overflow:hidden;transition:box-shadow .2s;display:flex;flex-direction:column}
+.tour:hover{box-shadow:var(--sh-md)}
+.tour.featured{border-color:var(--gold);box-shadow:0 0 0 1px var(--gold),var(--sh-sm)}
+.tour-head{padding:22px 24px 16px;display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
+.tour-emoji{font-size:30px;line-height:1}
+.lang-badge{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:4px 10px;border-radius:50px;background:var(--porcelain);color:var(--ink-light);border:1px solid var(--border-ink)}
+.lang-badge.en{background:#EAF5EA;color:#2A6B2A;border-color:#b8d8b8}
+.tour-body-t{padding:0 24px 20px;flex:1}
+.tour-body-t h3{font-family:var(--serif);font-size:19px;font-weight:400;color:var(--ink);margin-bottom:8px;line-height:1.3}
+.tour-body-t p{font-size:14px;color:var(--ink-muted);line-height:1.6}
+.tour-foot{padding:16px 24px;border-top:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;background:var(--stone)}
+.tour-meta-t{font-size:12px;color:var(--ink-muted);display:flex;gap:14px}
+.tour-price-t{font-family:var(--serif);font-size:20px;color:var(--gold)}
+.tour-price-t small{font-family:var(--sans);font-size:12px;color:var(--ink-muted);font-weight:400}
+
+/* PROCESS */
+#process{background:var(--ink);padding:var(--pad-v) var(--pad-h)}
+.process-inner{max-width:var(--mw);margin:0 auto}
+.process-head{text-align:center;margin-bottom:64px}
+.process-head .eyebrow{color:var(--gold)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:40px;position:relative}
+.steps::after{content:'';position:absolute;top:19px;left:calc(12.5% + 10px);right:calc(12.5% + 10px);height:1px;background:linear-gradient(to right,var(--gold),rgba(184,147,90,.2),var(--gold));z-index:0}
+.step{text-align:center;position:relative;z-index:1}
+.step-n{width:40px;height:40px;border:1.5px solid var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:17px;color:var(--gold);margin:0 auto 20px;background:var(--ink)}
+.step h3{font-family:var(--serif);font-size:17px;color:var(--white);font-weight:400;margin-bottom:10px}
+.step p{font-size:14px;color:rgba(255,255,255,.5);line-height:1.6}
+
+/* OFFER */
+.offer-card{background:var(--white);border:1px solid var(--border);border-radius:var(--r-lg);overflow:hidden;max-width:860px;margin:0 auto;box-shadow:var(--sh-lg)}
+.offer-card-head{background:var(--ink);padding:40px 48px 36px}
+.offer-card-body{padding:40px 48px}
+.offer-cols{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:40px}
+.offer-row{display:flex;align-items:flex-start;gap:12px;padding:14px 16px;background:var(--stone);border-radius:var(--r-sm);border:1px solid var(--stone-mid)}
+.offer-chk{font-size:13px;color:var(--gold);font-weight:700;flex-shrink:0;margin-top:1px}
+.offer-row p{font-size:14px;font-weight:500;color:var(--ink);line-height:1.45}
+.offer-cta-zone{border-top:1px solid var(--border);padding-top:36px;text-align:center}
+.offer-cta-zone p{font-size:13px;color:var(--ink-muted);margin-top:14px}
+
+/* DIFF */
+.diff-head{max-width:580px;margin-bottom:56px}
+.diff-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.diff-c{border:1px solid var(--border);border-radius:var(--r-md);padding:32px 28px;display:grid;grid-template-columns:48px 1fr;gap:20px;align-items:flex-start;transition:border-color .2s,box-shadow .2s}
+.diff-c:hover{border-color:var(--border-ink);box-shadow:var(--sh-sm)}
+.diff-icon-w{width:48px;height:48px;border-radius:var(--r-sm);background:var(--porcelain);display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0}
+.diff-c h3{font-family:var(--serif);font-size:18px;font-weight:400;color:var(--ink);margin-bottom:8px;line-height:1.3}
+.diff-c p{font-size:14px;color:var(--ink-muted);line-height:1.65}
+
+/* TESTI */
+.testi-head{text-align:center;max-width:540px;margin:0 auto 56px}
+.testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.tcard{background:var(--white);border:1px solid var(--border);border-radius:var(--r-md);padding:30px;display:flex;flex-direction:column}
+.stars-t{color:var(--gold);font-size:15px;letter-spacing:3px;margin-bottom:16px}
+.tcard blockquote{font-size:15px;color:var(--ink-light);line-height:1.7;font-style:italic;flex:1;margin-bottom:24px}
+.tauthor{display:flex;align-items:center;gap:12px}
+.av{width:38px;height:38px;border-radius:50%;background:var(--porcelain);border:1.5px solid var(--border-ink);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:600;color:var(--ink);flex-shrink:0}
+.tauthor-name{font-size:13px;font-weight:600;color:var(--ink)}
+.tauthor-loc{font-size:12px;color:var(--ink-muted)}
+
+/* FAQ */
+.faq-head{max-width:540px;margin-bottom:56px}
+.faqs{max-width:700px}
+.fi{border-bottom:1px solid var(--border);padding:26px 0}
+.fi:first-child{border-top:1px solid var(--border)}
+.fq{display:flex;justify-content:space-between;align-items:flex-start;cursor:pointer;gap:20px;user-select:none}
+.fq h3{font-family:var(--serif);font-size:17px;font-weight:400;color:var(--ink);line-height:1.35}
+.ftoggle{width:26px;height:26px;border-radius:50%;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;color:var(--ink-muted);font-size:16px;flex-shrink:0;transition:background .2s,border-color .2s,transform .25s;pointer-events:none}
+.fi.open .ftoggle{background:var(--ink);border-color:var(--ink);color:var(--white);transform:rotate(45deg)}
+.fa{max-height:0;overflow:hidden;transition:max-height .35s ease,padding .35s ease;padding-right:40px}
+.fi.open .fa{max-height:400px;padding-top:16px}
+.fa p{font-size:15px;color:var(--ink-light);line-height:1.7}
+
+/* RESA */
+#resa{background:var(--porcelain);padding:var(--pad-v) var(--pad-h)}
+.resa-inner{max-width:var(--mw);margin:0 auto}
+.resa-head{text-align:center;margin-bottom:48px}
+.cal-box{max-width:720px;margin:0 auto;background:var(--white);border:1px solid var(--border);border-radius:var(--r-lg);padding:48px 40px;box-shadow:var(--sh-md);text-align:center}
+.cal-label{display:inline-block;background:var(--ink);color:var(--white);font-size:10px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;padding:5px 14px;border-radius:50px;margin-bottom:20px}
+.cal-box h3{font-family:var(--serif);font-size:22px;color:var(--ink);margin-bottom:10px}
+.cal-box p{font-size:15px;color:var(--ink-muted);margin-bottom:28px;max-width:440px;margin-left:auto;margin-right:auto}
+.cal-code{background:var(--stone);border:1px dashed var(--border);border-radius:var(--r-md);padding:20px;font-family:monospace;font-size:13px;color:var(--ink-muted);margin-bottom:24px;text-align:left;line-height:1.6}
+
+/* CTA FINAL */
+#cta-final{background:var(--ink);padding:var(--pad-v) var(--pad-h);text-align:center}
+.guarantee{margin-top:24px;font-size:13px;color:rgba(255,255,255,.4);display:flex;align-items:center;justify-content:center;gap:8px}
+
+/* BLOG */
+.blog-h{text-align:center;max-width:520px;margin:0 auto 48px}
+.blog-g{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.bcard{background:var(--white);border:1px solid var(--border);border-radius:var(--r-md);padding:26px;transition:box-shadow .2s}
+.bcard:hover{box-shadow:var(--sh-sm)}
+.btag{font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:10px}
+.bcard h3{font-family:var(--serif);font-size:17px;font-weight:400;color:var(--ink);margin-bottom:10px;line-height:1.35}
+.bcard p{font-size:13px;color:var(--ink-muted);line-height:1.6}
+
+footer{background:var(--white);border-top:1px solid var(--border);padding:36px var(--pad-h);text-align:center}
+footer p{font-size:13px;color:var(--ink-muted);line-height:1.8}
+footer a{color:var(--gold)}
+
+/* SCROLL REVEAL */
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .5s,transform .5s}
+.reveal.in{opacity:1;transform:none}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .hero-grid,.sol-grid{grid-template-columns:1fr;gap:48px}
+  .sol-img{aspect-ratio:16/9;max-height:280px}
+  .diff-grid,.problem-grid{grid-template-columns:1fr}
+  .tour-list{grid-template-columns:1fr}
+  .offer-cols{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr 1fr;gap:32px}
+  .steps::after{display:none}
+}
+@media(max-width:640px){
+  .ben-grid,.testi-grid,.blog-g{grid-template-columns:1fr}
+  .offer-card-body,.offer-card-head{padding:28px 24px}
+  .steps{grid-template-columns:1fr}
+  .cal-box{padding:32px 24px}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="nav-inner">
+    <div class="logo">La Rochelle <em>Off Script</em></div>
+    <div class="nav-right">
+      <a href="#tours" class="nav-link" data-fr="Les visites" data-en="Our tours">Les visites</a>
+      <a href="#resa"  class="nav-link" data-fr="Réservation" data-en="Book">Réservation</a>
+      <div class="lang-switcher" role="group" aria-label="Language / Langue">
+        <button class="lang-btn active" id="btn-fr" data-lang="fr" aria-pressed="true">
+          <span class="flag">🇫🇷</span> FR
+        </button>
+        <button class="lang-btn" id="btn-en" data-lang="en" aria-pressed="false">
+          <span class="flag">🇬🇧</span> EN
+        </button>
+      </div>
+      <a href="#resa" class="btn btn-gold nav-cta" data-fr="Réserver une visite" data-en="Book a tour">Réserver une visite</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-grid">
+    <div class="hero-left">
+      <span class="eyebrow" data-fr="La Rochelle &amp; Châtelaillon-Plage" data-en="La Rochelle &amp; Châtelaillon-Plage">La Rochelle &amp; Châtelaillon-Plage</span>
+      <h1 class="d1" data-fr="La Rochelle vue<br>de <em>l'intérieur</em>." data-en="La Rochelle<br>from the <em>inside</em>.">La Rochelle vue<br>de <em>l'intérieur</em>.</h1>
+      <p class="body-lg" data-fr="Des visites guidées thématiques, en français <strong>et en anglais</strong>. Portées par une guide passionnée, locale et bilingue. Petits groupes. Anecdotes introuvables." data-en="Themed guided tours, in French <strong>and in English</strong>. Led by a passionate, local, bilingual guide. Small groups. Stories you won't find anywhere else.">Des visites guidées thématiques, en français <strong>et en anglais</strong>. Portées par une guide passionnée, locale et bilingue. Petits groupes. Anecdotes introuvables.</p>
+      <div class="btn-group">
+        <a href="#resa" class="btn btn-gold" data-fr="📅 Réserver une visite" data-en="📅 Book a tour">📅 Réserver une visite</a>
+        <a href="#tours" class="btn btn-ghost" data-fr="Voir les thèmes →" data-en="See all tours →">Voir les thèmes →</a>
+      </div>
+      <div class="hero-proof">
+        <div class="proof-item"><div class="proof-dot"></div><span data-fr="Bilingue FR · EN" data-en="Bilingual FR · EN">Bilingue FR · EN</span></div>
+        <div class="proof-item"><div class="proof-dot"></div><span data-fr="Petits groupes ≤ 12" data-en="Small groups ≤ 12">Petits groupes ≤ 12</span></div>
+        <div class="proof-item"><div class="proof-dot"></div><span data-fr="Guide résidente locale" data-en="Local resident guide">Guide résidente locale</span></div>
+        <div class="proof-item"><div class="proof-dot"></div><span data-fr="Visites thématiques uniques" data-en="Unique themed tours">Visites thématiques uniques</span></div>
+      </div>
+    </div>
+    <!-- TICKET -->
+    <div>
+      <div class="ticket-tabs" id="ticket-tabs">
+        <div class="ttab active" data-ticket="0" data-fr="⚓ Histoire" data-en="⚓ History">⚓ Histoire</div>
+        <div class="ttab" data-ticket="1" data-fr="🏴‍☠️ Pirates" data-en="🏴‍☠️ Pirates">🏴‍☠️ Pirates</div>
+        <div class="ttab" data-ticket="2" data-fr="🌿 Flore" data-en="🌿 Flora">🌿 Flore</div>
+        <div class="ttab" data-ticket="3" data-fr="🔑 Privée" data-en="🔑 Private">🔑 Privée</div>
+      </div>
+      <div class="ticket">
+        <div class="ticket-top">
+          <div class="ticket-eyebrow">La Rochelle Off Script · <span data-fr="Billet de visite" data-en="Tour ticket">Billet de visite</span></div>
+          <div class="ticket-title" id="t-title">Visite historique<br>du centre de La Rochelle</div>
+          <div class="ticket-accent" id="t-emoji">⚓</div>
+        </div>
+        <div class="ticket-perforation">
+          <div class="perf-circle left"></div>
+          <div class="perf-circle right"></div>
+        </div>
+        <div class="ticket-body">
+          <div class="ticket-row">
+            <div><div class="tk-label" data-fr="Thème" data-en="Theme">Thème</div><div class="tk-val" id="t-theme">Histoire &amp; Architecture</div></div>
+            <div style="text-align:right"><div class="tk-label" data-fr="Durée" data-en="Duration">Durée</div><div class="tk-val" id="t-duree">1h30</div></div>
+          </div>
+          <div class="ticket-row">
+            <div><div class="tk-label" data-fr="Groupe max" data-en="Max group">Groupe max</div><div class="tk-val" id="t-groupe">15 personnes</div></div>
+            <div style="text-align:right"><div class="tk-label" data-fr="Langue" data-en="Language">Langue</div><div class="tk-val" id="t-lang">FR · EN</div></div>
+          </div>
+          <div class="ticket-row">
+            <div><div class="tk-label" data-fr="Disponibilité" data-en="Availability">Disponibilité</div><div class="tk-val" id="t-dispo">Avr. – Oct. 2026</div></div>
+          </div>
+        </div>
+        <div class="ticket-footer">
+          <div class="tk-price" id="t-price">15 € <small>/ pers.</small></div>
+          <div class="tk-cta-t" data-fr="→ Réserver" data-en="→ Book now">→ Réserver</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS BAR -->
+<div id="stats-bar">
+  <div class="stats-inner">
+    <div class="stat"><div class="stat-n">3 <em>M</em></div><div class="stat-l" data-fr="visiteurs / an à La Rochelle" data-en="visitors / year in La Rochelle">visiteurs / an à La Rochelle</div></div>
+    <div class="stat"><div class="stat-n"><em>0</em></div><div class="stat-l" data-fr="visite guidée en anglais à Châtelaillon" data-en="English guided tour in Châtelaillon">visite guidée en anglais à Châtelaillon</div></div>
+    <div class="stat"><div class="stat-n">8</div><div class="stat-l" data-fr="thèmes exclusifs disponibles" data-en="exclusive themes available">thèmes exclusifs disponibles</div></div>
+    <div class="stat"><div class="stat-n">30 <em>ans</em></div><div class="stat-l" data-fr="d'expérience en transmission" data-en="years of teaching &amp; guiding">d'expérience en transmission</div></div>
+  </div>
+</div>
+
+<!-- PROBLEME -->
+<section id="problem" class="sec">
+  <div class="problem-intro reveal">
+    <span class="eyebrow" data-fr="Le problème" data-en="The problem">Le problème</span>
+    <h2 class="d2" data-fr="Vous visitez La Rochelle.<br>Mais la vivez-vous vraiment ?" data-en="You visit La Rochelle.<br>But do you truly experience it?">Vous visitez La Rochelle.<br>Mais la vivez-vous vraiment ?</h2>
+    <p class="body-md" style="margin-top:16px" data-fr="Trop de touristes. Pas assez d'histoires. Et si vous ne parlez pas français, la ville reste à moitié fermée." data-en="Too many tourists. Too few real stories. And if you don't speak French, the city stays half-closed to you.">Trop de touristes. Pas assez d'histoires. Et si vous ne parlez pas français, la ville reste à moitié fermée.</p>
+  </div>
+  <div class="problem-grid reveal">
+    <div class="pain"><div class="pain-mark">🚌</div><h3 data-fr="40 personnes derrière un drapeau" data-en="40 people following a flag">40 personnes derrière un drapeau</h3><p data-fr="Les grandes visites ressemblent à des convois. Vous entendez un tiers de ce qui est dit. La visite est terminée avant d'avoir commencé." data-en="Large tours feel like convoys. You hear a third of what's said. The visit is over before it really begins.">Les grandes visites ressemblent à des convois. Vous entendez un tiers de ce qui est dit.</p></div>
+    <div class="pain"><div class="pain-mark">🔄</div><h3 data-fr="Toujours les mêmes circuits" data-en="Always the same routes">Toujours les mêmes circuits</h3><p data-fr="Les tours, le vieux port, la lanterne. Si vous êtes déjà venu, il n'y a rien de nouveau. L'histoire vraie reste dans les livres." data-en="The towers, the old harbour, the lantern. If you've been before, there's nothing new. The real story stays in the books.">Les tours, le vieux port, la lanterne. Si vous êtes déjà venu, il n'y a rien de nouveau.</p></div>
+    <div class="pain"><div class="pain-mark">🌐</div><h3 data-fr="Zéro visite en anglais à Châtelaillon" data-en="Zero English tours in Châtelaillon">Zéro visite en anglais à Châtelaillon</h3><p data-fr="Si vous ne parlez pas français, la richesse naturelle et historique de Châtelaillon-Plage vous est totalement inaccessible." data-en="If you don't speak French, the natural and historical richness of Châtelaillon-Plage is completely out of reach.">Si vous ne parlez pas français, la richesse de Châtelaillon-Plage vous est totalement inaccessible.</p></div>
+    <div class="pain"><div class="pain-mark">📖</div><h3 data-fr="Les meilleures anecdotes ne sont nulle part" data-en="The best stories exist nowhere">Les meilleures anecdotes ne sont nulle part</h3><p data-fr="Pirates, femmes oubliées, botanique maritime… Ces récits n'existent dans aucun circuit standard." data-en="Pirates, forgotten women, maritime botany… These stories don't exist in any standard tour.">Pirates, femmes oubliées, botanique maritime… Ces récits n'existent dans aucun circuit standard.</p></div>
+  </div>
+</section>
+
+<!-- QUOTE -->
+<div class="quote-bloc">
+  <p class="q-text" data-fr="Voyager, c'est rencontrer quelqu'un qui vous explique pourquoi l'endroit où vous êtes est exceptionnel." data-en="To travel is to meet someone who reveals why the place you're standing in is extraordinary.">Voyager, c'est rencontrer quelqu'un qui vous explique pourquoi l'endroit où vous êtes est exceptionnel.</p>
+  <p class="q-author" data-fr="— L'esprit de nos visites" data-en="— The spirit of our tours">— L'esprit de nos visites</p>
+</div>
+
+<!-- SOLUTION -->
+<section id="solution" class="sec">
+  <div class="sol-grid reveal">
+    <div class="sol-img">
+      <div class="sol-img-caption">
+        <strong data-fr="Guide bilingue &amp; résidente locale" data-en="Bilingual guide &amp; local resident">Guide bilingue &amp; résidente locale</strong>
+        <p>Châtelaillon-Plage &amp; La Rochelle · Charente-Maritime</p>
+      </div>
+    </div>
+    <div class="sol-text">
+      <span class="eyebrow" data-fr="La solution" data-en="The solution">La solution</span>
+      <h2 class="d2" data-fr="Une guide. Une ville.<br>Une vraie histoire." data-en="One guide. One city.<br>One real story.">Une guide. Une ville.<br>Une vraie histoire.</h2>
+      <p class="body-md" data-fr="Ancienne enseignante d'anglais depuis 1991, résidente à Châtelaillon depuis 2016, je connais ces lieux de l'intérieur — pas depuis un guide, mais depuis les gens et les saisons qui les habitent." data-en="A former English teacher since 1991, living in Châtelaillon since 2016 — I know these places from the inside. Not from a guidebook, but from the people and seasons that inhabit them.">Ancienne enseignante d'anglais depuis 1991, résidente à Châtelaillon depuis 2016, je connais ces lieux de l'intérieur.</p>
+      <p class="body-md" data-fr="Mes visites ne sont pas des circuits. Ce sont des <strong>expériences construites autour d'un récit</strong>. Rythme humain. Anecdotes introuvables. Vrai contact." data-en="My tours aren't itineraries. They're <strong>experiences built around a story</strong>. Human pace. Untold anecdotes. Real connection.">Mes visites ne sont pas des circuits. Ce sont des <strong>expériences construites autour d'un récit</strong>.</p>
+      <ul class="sol-list">
+        <li><div class="sol-check">✓</div><span data-fr="Guide parfaitement bilingue — la seule à Châtelaillon" data-en="Perfectly bilingual guide — the only one in Châtelaillon">Guide parfaitement bilingue — la seule à Châtelaillon</span></li>
+        <li><div class="sol-check">✓</div><span data-fr="Thèmes introuvables en circuit standard" data-en="Themes unavailable in standard tours">Thèmes introuvables en circuit standard</span></li>
+        <li><div class="sol-check">✓</div><span data-fr="Petits groupes — max 12 personnes" data-en="Small groups — max 12 people">Petits groupes — max 12 personnes</span></li>
+        <li><div class="sol-check">✓</div><span data-fr="Expertise botanique maritime unique en région" data-en="Unique maritime botany expertise in the region">Expertise botanique maritime unique en région</span></li>
+        <li><div class="sol-check">✓</div><span data-fr="Adaptée aux familles, couples, séniors, croisiéristes" data-en="Suitable for families, couples, seniors, cruise passengers">Adaptée aux familles, couples, séniors, croisiéristes</span></li>
+      </ul>
+      <a href="#resa" class="btn btn-ink" data-fr="Je veux vivre ça →" data-en="I want this experience →">Je veux vivre ça →</a>
+    </div>
+  </div>
+</section>
+
+<!-- BENEFITS -->
+<section id="benefits" class="sec">
+  <div class="ben-header reveal">
+    <span class="eyebrow" data-fr="Ce que vous y gagnez" data-en="What you get">Ce que vous y gagnez</span>
+    <h2 class="d2" data-fr="Repartir avec plus<br>que des photos." data-en="Leave with more<br>than photos.">Repartir avec plus<br>que des photos.</h2>
+  </div>
+  <div class="ben-grid reveal">
+    <div class="ben"><span class="ben-icon">🔍</span><h3 data-fr="Des coulisses invisibles" data-en="Hidden backstage stories">Des coulisses invisibles</h3><p data-fr="Rues cachées, symboles oubliés, anecdotes de résidents. Vous vivez La Rochelle de l'intérieur." data-en="Hidden streets, forgotten symbols, residents' anecdotes. You experience La Rochelle from the inside.">Rues cachées, symboles oubliés, anecdotes de résidents.</p></div>
+    <div class="ben"><span class="ben-icon">🌿</span><h3 data-fr="Une expertise botanique rare" data-en="Rare botanical expertise">Une expertise botanique rare</h3><p data-fr="La visite Flore Maritime est co-construite avec une chercheuse en botanique maritime. Une lecture du littoral que personne d'autre ne propose." data-en="The Maritime Flora tour is co-designed with a marine botany researcher. A coastal reading no one else offers.">La visite Flore Maritime est co-construite avec une chercheuse en botanique maritime.</p></div>
+    <div class="ben"><span class="ben-icon">🗺️</span><h3 data-fr="Un rythme à votre mesure" data-en="A pace that suits you">Un rythme à votre mesure</h3><p data-fr="Pas de convoi. Des échanges, des questions, de la curiosité partagée." data-en="No convoy. Real exchanges, questions, shared curiosity. Time to breathe.">Pas de convoi. Des échanges, des questions, de la curiosité partagée.</p></div>
+    <div class="ben"><span class="ben-icon">🇬🇧</span><h3 data-fr="Accessible en anglais" data-en="Fully available in English">Accessible en anglais</h3><p data-fr="Pour la première fois, La Rochelle et Châtelaillon s'ouvrent pleinement aux visiteurs anglophones." data-en="For the first time, La Rochelle and Châtelaillon fully open their doors to English-speaking visitors.">Pour la première fois, La Rochelle s'ouvre pleinement aux visiteurs anglophones.</p></div>
+    <div class="ben"><span class="ben-icon">👨‍👩‍👧</span><h3 data-fr="Adaptée à tous les profils" data-en="Suitable for everyone">Adaptée à tous les profils</h3><p data-fr="Couple, famille, groupe d'amis, séminaire, scolaires, croisiéristes. Chaque visite peut être modulée." data-en="Couples, families, friend groups, seminars, school trips, cruise passengers — every tour can be adapted.">Couple, famille, groupe d'amis, séminaire, scolaires, croisiéristes.</p></div>
+    <div class="ben"><span class="ben-icon">🎭</span><h3 data-fr="Des thèmes qu'on ne trouve nulle part" data-en="Themes you'll find nowhere else">Des thèmes qu'on ne trouve nulle part</h3><p data-fr="Pirates, histoire des femmes, visites nocturnes, botanique — des récits introuvables en circuit standard." data-en="Pirates, women's history, night tours, botany — stories unavailable in any standard circuit.">Pirates, histoire des femmes, visites nocturnes, botanique.</p></div>
+  </div>
+</section>
+
+<!-- TOURS -->
+<section id="tours" class="sec" style="background:var(--stone)">
+  <div class="tours-header reveal">
+    <span class="eyebrow" data-fr="Les visites" data-en="Our tours">Les visites</span>
+    <h2 class="d2" data-fr="Choisissez votre aventure." data-en="Choose your adventure.">Choisissez votre aventure.</h2>
+    <p class="body-md" style="margin-top:12px" data-fr="Des expériences thématiques pour ceux qui veulent comprendre, pas juste voir." data-en="Themed experiences for those who want to understand — not just see.">Des expériences thématiques pour ceux qui veulent comprendre, pas juste voir.</p>
+  </div>
+  <div class="tour-list reveal">
+    <div class="tour"><div class="tour-head"><span class="tour-emoji">⚓</span><span class="lang-badge">FR · EN</span></div><div class="tour-body-t"><h3 data-fr="Visite historique du centre" data-en="Historic city centre tour">Visite historique du centre</h3><p data-fr="De la fondation médiévale aux guerres de religion. La Rochelle racontée dans toute sa profondeur." data-en="From medieval foundations to the wars of religion. La Rochelle told in its full depth.">De la fondation médiévale aux guerres de religion. La Rochelle racontée dans toute sa profondeur.</p></div><div class="tour-foot"><div class="tour-meta-t"><span>⏱ 1h30</span><span data-fr="👥 ≤ 15 pers." data-en="👥 ≤ 15 people">👥 ≤ 15 pers.</span></div><div class="tour-price-t">15 € <small data-fr="/ pers." data-en="/ p.p.">/ pers.</small></div></div></div>
+    <div class="tour"><div class="tour-head"><span class="tour-emoji">🏴‍☠️</span><span class="lang-badge en">FR · EN</span></div><div class="tour-body-t"><h3 data-fr="Pirates &amp; Légendes" data-en="Pirates &amp; Legends">Pirates &amp; Légendes</h3><p data-fr="Les secrets inavouables de la cité corsaire. Histoire vraie et légendes mêlées — fascinant à tout âge." data-en="The untold secrets of the corsair city. Real history and legends intertwined — fascinating at any age.">Les secrets inavouables de la cité corsaire. Histoire vraie et légendes mêlées.</p></div><div class="tour-foot"><div class="tour-meta-t"><span>⏱ 2h</span><span data-fr="👥 ≤ 12 pers." data-en="👥 ≤ 12 people">👥 ≤ 12 pers.</span></div><div class="tour-price-t">20 € <small data-fr="/ pers." data-en="/ p.p.">/ pers.</small></div></div></div>
+    <div class="tour"><div class="tour-head"><span class="tour-emoji">♀️</span><span class="lang-badge">FR</span></div><div class="tour-body-t"><h3 data-fr="Histoire des Femmes de La Rochelle" data-en="Women's History of La Rochelle">Histoire des Femmes de La Rochelle</h3><p data-fr="Celles qu'on n'a pas mises sur les monuments, mais qui ont bâti la ville." data-en="Those not carved in stone, but who built the city.">Celles qu'on n'a pas mises sur les monuments, mais qui ont bâti la ville.</p></div><div class="tour-foot"><div class="tour-meta-t"><span>⏱ 2h</span><span data-fr="👥 ≤ 12 pers." data-en="👥 ≤ 12 people">👥 ≤ 12 pers.</span></div><div class="tour-price-t">20 € <small data-fr="/ pers." data-en="/ p.p.">/ pers.</small></div></div></div>
+    <div class="tour"><div class="tour-head"><span class="tour-emoji">🌿</span><span class="lang-badge en">FR · EN</span></div><div class="tour-body-t"><h3 data-fr="Flore Maritime de Châtelaillon" data-en="Maritime Flora of Châtelaillon">Flore Maritime de Châtelaillon</h3><p data-fr="Co-construite avec une chercheuse en botanique maritime. La plage vue par la science." data-en="Co-designed with a marine botany researcher. The beach as seen through science.">Co-construite avec une chercheuse en botanique maritime. La plage vue par la science.</p></div><div class="tour-foot"><div class="tour-meta-t"><span>⏱ 1h30</span><span data-fr="👥 ≤ 10 pers." data-en="👥 ≤ 10 people">👥 ≤ 10 pers.</span></div><div class="tour-price-t">18 € <small data-fr="/ pers." data-en="/ p.p.">/ pers.</small></div></div></div>
+    <div class="tour"><div class="tour-head"><span class="tour-emoji">🌙</span><span class="lang-badge">FR</span></div><div class="tour-body-t"><h3 data-fr="Visite Nocturne" data-en="Night Tour">Visite Nocturne</h3><p data-fr="Quand les touristes dorment, La Rochelle parle. Les lumières, les ombres, les histoires de nuit." data-en="When tourists sleep, La Rochelle speaks. Lights, shadows, and stories of the night.">Quand les touristes dorment, La Rochelle parle. Les lumières, les ombres, les histoires de nuit.</p></div><div class="tour-foot"><div class="tour-meta-t"><span>⏱ 1h30</span><span data-fr="👥 ≤ 10 pers." data-en="👥 ≤ 10 people">👥 ≤ 10 pers.</span></div><div class="tour-price-t">18 € <small data-fr="/ pers." data-en="/ p.p.">/ pers.</small></div></div></div>
+    <div class="tour"><div class="tour-head"><span class="tour-emoji">🧁</span><span class="lang-badge en">FR · EN</span></div><div class="tour-body-t"><h3 data-fr="Visite Gourmande" data-en="Gourmet Tour">Visite Gourmande</h3><p data-fr="Histoire et gastronomie locale entremêlées. Découvertes culinaires, producteurs du coin." data-en="Local history and gastronomy intertwined. Culinary discoveries and local producers.">Histoire et gastronomie locale entremêlées. Découvertes culinaires, producteurs du coin.</p></div><div class="tour-foot"><div class="tour-meta-t"><span>⏱ 2h</span><span data-fr="👥 ≤ 10 pers." data-en="👥 ≤ 10 people">👥 ≤ 10 pers.</span></div><div class="tour-price-t">35 € <small data-fr="/ pers." data-en="/ p.p.">/ pers.</small></div></div></div>
+    <div class="tour featured"><div class="tour-head"><span class="tour-emoji">🔑</span><span class="lang-badge en">FR · EN</span></div><div class="tour-body-t"><h3 data-fr="Visite Privée Sur-Mesure" data-en="Private Bespoke Tour">Visite Privée Sur-Mesure</h3><p data-fr="Vous choisissez le thème, l'heure, le rythme. L'expérience ultime, rien qu'à vous." data-en="You choose the theme, time, and pace. The ultimate experience, entirely yours.">Vous choisissez le thème, l'heure, le rythme. L'expérience ultime, rien qu'à vous.</p></div><div class="tour-foot"><div class="tour-meta-t"><span>⏱ 2h</span><span data-fr="👥 1–4 pers." data-en="👥 1–4 people">👥 1–4 pers.</span></div><div class="tour-price-t">120 € <small data-fr="/ groupe" data-en="/ group">/ groupe</small></div></div></div>
+    <div class="tour featured" style="border-color:var(--border-ink)"><div class="tour-head"><span class="tour-emoji">🚢</span><span class="lang-badge en">EN</span></div><div class="tour-body-t"><h3 data-fr="Visite Croisiéristes" data-en="Shore Excursion">Visite Croisiéristes</h3><p data-fr="Une escale mémorable, entièrement en anglais. Contenu condensé, adapté à vos horaires." data-en="A memorable port call, entirely in English. Condensed content, timed to your schedule.">Une escale mémorable, entièrement en anglais. Contenu condensé, adapté à vos horaires.</p></div><div class="tour-foot"><div class="tour-meta-t"><span>⏱ 2h</span><span data-fr="👥 ≤ 25 pers." data-en="👥 ≤ 25 people">👥 ≤ 25 pers.</span></div><div class="tour-price-t" data-fr="À partir de 120 €" data-en="From 120 €">À partir de 120 €</div></div></div>
+  </div>
+  <div style="text-align:center;margin-top:48px" class="reveal">
+    <a href="#resa" class="btn btn-ink" data-fr="📅 Réserver ma visite" data-en="📅 Book my tour">📅 Réserver ma visite</a>
+    <p class="body-sm" style="margin-top:12px" data-fr="Vous hésitez ? Contactez-moi — je vous aide à choisir." data-en="Not sure? Contact me — I'll help you choose.">Vous hésitez ? Contactez-moi — je vous aide à choisir.</p>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+  <div class="process-inner">
+    <div class="process-head reveal">
+      <span class="eyebrow" data-fr="Comment ça marche" data-en="How it works">Comment ça marche</span>
+      <h2 class="d2" style="color:var(--white)" data-fr="Simple. Rapide. Mémorable." data-en="Simple. Quick. Unforgettable.">Simple. Rapide. Mémorable.</h2>
+    </div>
+    <div class="steps reveal">
+      <div class="step"><div class="step-n">1</div><h3 data-fr="Choisissez votre thème" data-en="Choose your theme">Choisissez votre thème</h3><p data-fr="Parcourez le catalogue et trouvez le récit qui vous appelle." data-en="Browse the catalogue and find the story that calls to you.">Parcourez le catalogue et trouvez le récit qui vous appelle.</p></div>
+      <div class="step"><div class="step-n">2</div><h3 data-fr="Réservez en ligne" data-en="Book online">Réservez en ligne</h3><p data-fr="Date, heure, groupe — 2 minutes via le calendrier. Confirmation immédiate." data-en="Date, time, group size — 2 minutes via the calendar. Instant confirmation.">Date, heure, groupe — 2 minutes via le calendrier. Confirmation immédiate.</p></div>
+      <div class="step"><div class="step-n">3</div><h3 data-fr="Retrouvez-moi sur place" data-en="Meet me on location">Retrouvez-moi sur place</h3><p data-fr="Point de rendez-vous indiqué. Ponctuelle, prête, souriante." data-en="Meeting point confirmed by email. Punctual, ready, and smiling.">Point de rendez-vous indiqué. Ponctuelle, prête, souriante.</p></div>
+      <div class="step"><div class="step-n">4</div><h3 data-fr="Vivez quelque chose de vrai" data-en="Live something real">Vivez quelque chose de vrai</h3><p data-fr="Deux heures plus tard, vous avez une histoire. Pas juste des photos." data-en="Two hours later, you have a story to tell. Not just photos.">Deux heures plus tard, vous avez une histoire. Pas juste des photos.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- OFFER -->
+<section id="offer" class="sec" style="background:var(--gold-pale)">
+  <div style="text-align:center;margin-bottom:48px" class="reveal">
+    <span class="eyebrow" data-fr="Ce qui est inclus" data-en="What's included">Ce qui est inclus</span>
+    <h2 class="d2" data-fr="Une expérience complète, sans surprise." data-en="A complete experience, no surprises.">Une expérience complète, sans surprise.</h2>
+  </div>
+  <div class="offer-card reveal">
+    <div class="offer-card-head">
+      <h2 class="d3" style="color:var(--white)" data-fr="Toutes nos visites incluent" data-en="All our tours include">Toutes nos visites incluent</h2>
+      <p style="color:rgba(255,255,255,.65)" data-fr="Aucun frais caché. Aucun supplément inattendu." data-en="No hidden fees. No unexpected extras.">Aucun frais caché. Aucun supplément inattendu.</p>
+    </div>
+    <div class="offer-card-body">
+      <div class="offer-cols">
+        <div class="offer-row"><div class="offer-chk">✓</div><p data-fr="Guide passionnée, localement ancrée depuis 10 ans" data-en="Passionate guide, locally rooted for 10 years">Guide passionnée, localement ancrée depuis 10 ans</p></div>
+        <div class="offer-row"><div class="offer-chk">✓</div><p data-fr="Parcours préparé et enrichi d'anecdotes inédites" data-en="Route prepared and enriched with original anecdotes">Parcours préparé et enrichi d'anecdotes inédites</p></div>
+        <div class="offer-row"><div class="offer-chk">✓</div><p data-fr="Petit groupe (max 12) pour une vraie interaction" data-en="Small group (max 12) for genuine interaction">Petit groupe (max 12) pour une vraie interaction</p></div>
+        <div class="offer-row"><div class="offer-chk">✓</div><p data-fr="Bilingue FR · EN sur les visites concernées" data-en="Bilingual FR · EN on applicable tours">Bilingue FR · EN sur les visites concernées</p></div>
+        <div class="offer-row"><div class="offer-chk">✓</div><p data-fr="Adaptation au rythme et aux questions du groupe" data-en="Adapted to the group's pace and questions">Adaptation au rythme et aux questions du groupe</p></div>
+        <div class="offer-row"><div class="offer-chk">✓</div><p data-fr="Recommandations personnalisées (restaurants, lieux off)" data-en="Personalised tips (restaurants, hidden spots)">Recommandations personnalisées (restaurants, lieux off)</p></div>
+        <div class="offer-row"><div class="offer-chk">✓</div><p data-fr="Confirmation immédiate par email" data-en="Instant email confirmation">Confirmation immédiate par email</p></div>
+        <div class="offer-row"><div class="offer-chk">✓</div><p data-fr="Annulation flexible jusqu'à 48h avant la visite" data-en="Free cancellation up to 48h before the tour">Annulation flexible jusqu'à 48h avant la visite</p></div>
+      </div>
+      <div class="offer-cta-zone">
+        <a href="#resa" class="btn btn-gold" style="font-size:16px;padding:16px 36px" data-fr="📅 Choisir ma date et réserver" data-en="📅 Pick my date &amp; book">📅 Choisir ma date et réserver</a>
+        <p data-fr="Disponible 7j/7 · Saison avril–octobre" data-en="Available 7 days a week · April to October season">Disponible 7j/7 · Saison avril–octobre</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DIFF -->
+<section id="diff" class="sec">
+  <div class="diff-head reveal">
+    <span class="eyebrow" data-fr="Pourquoi ces visites" data-en="Why these tours">Pourquoi ces visites</span>
+    <h2 class="d2" data-fr="Ce que personne d'autre<br>ne peut vous offrir ici." data-en="What no one else<br>can offer you here.">Ce que personne d'autre<br>ne peut vous offrir ici.</h2>
+  </div>
+  <div class="diff-grid reveal">
+    <div class="diff-c"><div class="diff-icon-w">🌊</div><div><h3 data-fr="La seule guide bilingue de Châtelaillon" data-en="The only bilingual guide in Châtelaillon">La seule guide bilingue de Châtelaillon</h3><p data-fr="Aucune visite en anglais n'existe à Châtelaillon-Plage. Cette offre est unique sur le territoire." data-en="No English tour exists in Châtelaillon-Plage. This offer is unique in the entire area.">Aucune visite en anglais n'existe à Châtelaillon-Plage. Cette offre est unique sur le territoire.</p></div></div>
+    <div class="diff-c"><div class="diff-icon-w">🌿</div><div><h3 data-fr="Un accès au savoir d'une chercheuse" data-en="Access to a researcher's expertise">Un accès au savoir d'une chercheuse</h3><p data-fr="La visite Flore Maritime est co-construite avec une spécialiste en botanique maritime." data-en="The Maritime Flora tour is co-designed with a marine botany specialist. No agency can match this depth.">La visite Flore Maritime est co-construite avec une spécialiste en botanique maritime.</p></div></div>
+    <div class="diff-c"><div class="diff-icon-w">📚</div><div><h3 data-fr="30 ans de transmission pédagogique" data-en="30 years of teaching experience">30 ans de transmission pédagogique</h3><p data-fr="Ancienne enseignante, je ne récite pas — j'enseigne. Je sens quand le groupe est prêt à aller plus loin." data-en="A former teacher, I don't recite — I teach. I sense when the group is ready to go deeper.">Ancienne enseignante, je ne récite pas — j'enseigne.</p></div></div>
+    <div class="diff-c"><div class="diff-icon-w">🤝</div><div><h3 data-fr="Un réseau local inaccessible aux agences" data-en="A local network no agency has">Un réseau local inaccessible aux agences</h3><p data-fr="Résidente depuis 2016, je connais les producteurs, artisans, historiens locaux." data-en="A resident since 2016, I know the local producers, craftspeople, and historians personally.">Résidente depuis 2016, je connais les producteurs, artisans, historiens locaux.</p></div></div>
+  </div>
+</section>
+
+<!-- TESTI -->
+<section id="testi" class="sec" style="background:var(--stone)">
+  <div class="testi-head reveal">
+    <span class="eyebrow" data-fr="Ce qu'ils en disent" data-en="What they say">Ce qu'ils en disent</span>
+    <h2 class="d2" data-fr="Des visites qui laissent une trace." data-en="Tours that leave a mark.">Des visites qui laissent une trace.</h2>
+  </div>
+  <div class="testi-grid reveal">
+    <div class="tcard"><div class="stars-t">★★★★★</div><blockquote data-fr='"Je reviens à La Rochelle chaque été. Cette visite Pirates m&apos;a fait découvrir des choses que je ne connaissais absolument pas. Un vrai coup de cœur."' data-en='"I come back to La Rochelle every summer. The Pirates tour showed me things I had absolutely no idea about. A genuine revelation."'>"Je reviens à La Rochelle chaque été. Cette visite Pirates m'a fait découvrir des choses que je ne connaissais pas."</blockquote><div class="tauthor"><div class="av">ML</div><div><div class="tauthor-name">Marie-Laure B.</div><div class="tauthor-loc" data-fr="Lyon · Visite Pirates &amp; Légendes" data-en="Lyon · Pirates &amp; Legends tour">Lyon · Visite Pirates &amp; Légendes</div></div></div></div>
+    <div class="tcard"><div class="stars-t">★★★★★</div><blockquote data-fr='"En tant qu&apos;anglophones, nous étions souvent exclus des visites en France. C&apos;est la première fois que nous avons vraiment compris l&apos;histoire d&apos;une ville française."' data-en='"As English speakers, we were often left out of French guided tours. This was the first time we truly understood the history of a French city. Remarkable guide."'>"As English speakers, we were often left out of French guided tours. This was the first time we truly understood the history of a French city."</blockquote><div class="tauthor"><div class="av">JB</div><div><div class="tauthor-name">James &amp; Barbara T.</div><div class="tauthor-loc" data-fr="Londres · Visite privée" data-en="London · Private guided tour">Londres · Visite privée</div></div></div></div>
+    <div class="tcard"><div class="stars-t">★★★★★</div><blockquote data-fr='"La visite flore maritime avec mes enfants a été magique. Ils s&apos;en souviennent encore 6 mois après. Une pédagogue hors pair."' data-en='"The maritime flora tour with my children was magical. They still talk about it 6 months later. A remarkable educator."'>"La visite flore maritime avec mes enfants a été magique. Ils s'en souviennent encore 6 mois après."</blockquote><div class="tauthor"><div class="av">SC</div><div><div class="tauthor-name">Sophie C.</div><div class="tauthor-loc" data-fr="Bordeaux · Visite Flore Maritime" data-en="Bordeaux · Maritime Flora tour">Bordeaux · Visite Flore Maritime</div></div></div></div>
+  </div>
+  <p style="text-align:center;margin-top:28px;font-size:13px;color:var(--ink-muted);font-style:italic" data-fr="✦ Ces témoignages sont représentatifs des retours reçus lors des visites pilotes." data-en="✦ These testimonials are representative of feedback received during pilot tours.">✦ Ces témoignages sont représentatifs des retours reçus lors des visites pilotes.</p>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="sec">
+  <div class="faq-head reveal">
+    <span class="eyebrow" data-fr="Vos questions" data-en="Your questions">Vos questions</span>
+    <h2 class="d2" data-fr="On a réponse à tout." data-en="We have an answer for everything.">On a réponse à tout.</h2>
+  </div>
+  <div class="faqs reveal">
+    <div class="fi open"><div class="fq"><h3 data-fr="Les visites ont-elles vraiment lieu en anglais ?" data-en="Are the tours really conducted in English?">Les visites ont-elles vraiment lieu en anglais ?</h3><div class="ftoggle">+</div></div><div class="fa"><p data-fr="Oui, absolument. Ancienne enseignante d'anglais depuis 1991, la maîtrise de la langue est totale. Les visiteurs anglophones vivent exactement la même expérience que les francophones. Aucun compromis." data-en="Yes, absolutely. As a former English teacher since 1991, my command of the language is complete. English-speaking visitors experience exactly the same depth as French speakers. No compromise.">Oui, absolument. Ancienne enseignante d'anglais depuis 1991, la maîtrise de la langue est totale. Les visiteurs anglophones vivent exactement la même expérience que les francophones. Aucun compromis.</p></div></div>
+    <div class="fi"><div class="fq"><h3 data-fr="Quelle est la taille des groupes ?" data-en="How large are the groups?">Quelle est la taille des groupes ?</h3><div class="ftoggle">+</div></div><div class="fa"><p data-fr="Entre 8 et 15 personnes selon la visite — jamais plus. Je préfère refuser des places plutôt que de dégrader l'expérience." data-en="Between 8 and 15 people depending on the tour — never more. I'd rather turn people away than compromise the experience.">Entre 8 et 15 personnes selon la visite — jamais plus. Je préfère refuser des places plutôt que de dégrader l'expérience.</p></div></div>
+    <div class="fi"><div class="fq"><h3 data-fr="Que se passe-t-il en cas de mauvais temps ?" data-en="What happens in bad weather?">Que se passe-t-il en cas de mauvais temps ?</h3><div class="ftoggle">+</div></div><div class="fa"><p data-fr="La pluie légère n'arrête pas les visites. En cas de conditions vraiment défavorables, je vous propose un report gratuit ou un remboursement complet avec un préavis de 24h." data-en="Light rain doesn't stop us. In genuinely bad conditions, I offer a free rescheduling or a full refund with 24 hours' notice.">La pluie légère n'arrête pas les visites. En cas de conditions vraiment défavorables, je vous propose un report gratuit ou un remboursement complet avec un préavis de 24h.</p></div></div>
+    <div class="fi"><div class="fq"><h3 data-fr="Puis-je réserver pour un groupe privé ?" data-en="Can I book a private group tour?">Puis-je réserver pour un groupe privé ?</h3><div class="ftoggle">+</div></div><div class="fa"><p data-fr="Bien sûr. La visite privée sur-mesure (à partir de 120 €) est faite pour ça. Famille, team-building, enterrement de vie de jeune fille… Je m'adapte à votre contexte. Contactez-moi pour un devis." data-en="Of course. The bespoke private tour (from 120 €) is designed exactly for this. Families, team-building, hen parties… I adapt to your context. Contact me for a quote.">Bien sûr. La visite privée sur-mesure (à partir de 120 €) est faite pour ça. Contactez-moi pour un devis.</p></div></div>
+    <div class="fi"><div class="fq"><h3 data-fr="Faut-il être en forme physique ?" data-en="Do I need to be physically fit?">Faut-il être en forme physique ?</h3><div class="ftoggle">+</div></div><div class="fa"><p data-fr="Toutes les visites sont à pied, à rythme modéré — accessibles à toute personne en bonne santé de base. En cas de mobilité réduite, contactez-moi avant la réservation." data-en="All tours are on foot at a moderate pace — accessible to anyone in reasonable health. If you have reduced mobility, please contact me before booking.">Toutes les visites sont à pied, à rythme modéré. En cas de mobilité réduite, contactez-moi avant la réservation.</p></div></div>
+    <div class="fi"><div class="fq"><h3 data-fr="Puis-je annuler ou reporter ?" data-en="Can I cancel or reschedule?">Puis-je annuler ou reporter ?</h3><div class="ftoggle">+</div></div><div class="fa"><p data-fr="Jusqu'à 48h avant la visite, annulation et report sont entièrement gratuits. Après ce délai, je ferai toujours le maximum pour trouver une solution humaine." data-en="Up to 48 hours before the tour, cancellation and rescheduling are entirely free. Beyond that, I will always do my best to find a fair solution.">Jusqu'à 48h avant la visite, annulation et report sont entièrement gratuits.</p></div></div>
+    <div class="fi"><div class="fq"><h3 data-fr="Je suis croisiériste avec peu de temps. Est-ce adapté ?" data-en="I'm a cruise passenger with limited time. Is this suitable?">Je suis croisiériste avec peu de temps. Est-ce adapté ?</h3><div class="ftoggle">+</div></div><div class="fa"><p data-fr="Absolument. La visite Croisiéristes est spécialement conçue pour les passagers en escale : durée calibrée, contenu percutant, entièrement en anglais, respect de vos horaires." data-en="Absolutely. The Shore Excursion tour is specifically designed for cruise passengers: timed to your schedule, punchy content, entirely in English, with your re-boarding time respected.">Absolument. La visite Croisiéristes est spécialement conçue pour les passagers en escale : durée calibrée, entièrement en anglais, respect de vos horaires.</p></div></div>
+  </div>
+</section>
+
+<!-- RESA -->
+<section id="resa">
+  <div class="resa-inner">
+    <div class="resa-head reveal">
+      <span class="eyebrow" data-fr="Réservation" data-en="Booking">Réservation</span>
+      <h2 class="d2" data-fr="La prochaine aventure commence ici." data-en="Your next adventure starts here.">La prochaine aventure commence ici.</h2>
+      <p class="body-md" style="margin-top:12px;color:var(--ink-muted)" data-fr="Choisissez votre visite, votre date, votre heure. Confirmation immédiate par email." data-en="Choose your tour, your date, your time. Instant email confirmation.">Choisissez votre visite, votre date, votre heure. Confirmation immédiate par email.</p>
+    </div>
+    <div class="cal-box reveal">
+      <div class="cal-label" data-fr="📅 Calendrier de réservation" data-en="📅 Booking calendar">📅 Calendrier de réservation</div>
+      <h3 data-fr="Intégrez ici votre widget Calendly" data-en="Insert your Calendly widget here">Intégrez ici votre widget Calendly</h3>
+      <p data-fr="Dans Systeme.io, insérez un bloc « Code HTML » et collez le script Calendly ci-dessous." data-en="In Systeme.io, insert an HTML block and paste the Calendly script below.">Dans Systeme.io, insérez un bloc « Code HTML » et collez le script Calendly ci-dessous.</p>
+      <div class="cal-code">&lt;div class="calendly-inline-widget" data-url="https://calendly.com/VOTRE-LIEN" style="min-width:320px;height:700px;"&gt;&lt;/div&gt;<br>&lt;script src="https://assets.calendly.com/assets/external/widget.js"&gt;&lt;/script&gt;</div>
+      <a href="mailto:contact@larochelleoffscript.fr" class="btn btn-gold" data-fr="📩 Nous contacter directement" data-en="📩 Contact us directly">📩 Nous contacter directement</a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section id="cta-final">
+  <div style="max-width:680px;margin:0 auto;text-align:center">
+    <span class="eyebrow" data-fr="Prêt·e ?" data-en="Ready?">Prêt·e ?</span>
+    <h2 class="d2" style="color:var(--white);margin-bottom:16px" data-fr="La Rochelle attend d'être <em style='color:var(--gold);font-style:italic'>racontée</em>." data-en="La Rochelle is waiting to be <em style='color:var(--gold);font-style:italic'>revealed</em>.">La Rochelle attend d'être <em style="color:var(--gold);font-style:italic">racontée</em>.</h2>
+    <p class="body-lg" style="color:rgba(255,255,255,.6);max-width:460px;margin:0 auto 40px" data-fr="Places limitées par groupe. Disponible d'avril à octobre. Réservez maintenant." data-en="Limited spots per group. Available April to October. Book now.">Places limitées par groupe. Disponible d'avril à octobre. Réservez maintenant.</p>
+    <a href="#resa" class="btn btn-gold" style="font-size:17px;padding:18px 44px" data-fr="📅 Je réserve ma visite guidée" data-en="📅 Book my guided tour">📅 Je réserve ma visite guidée</a>
+    <div class="guarantee"><span data-fr="🔒 Annulation gratuite jusqu'à 48h · Confirmation immédiate" data-en="🔒 Free cancellation up to 48h · Instant confirmation">🔒 Annulation gratuite jusqu'à 48h · Confirmation immédiate</span></div>
+  </div>
+</section>
+
+<!-- BLOG -->
+<section id="blog" class="sec" style="background:var(--stone)">
+  <div class="blog-h reveal">
+    <span class="eyebrow" data-fr="Le blog" data-en="The blog">Le blog</span>
+    <h2 class="d3" data-fr="Approfondissez votre curiosité." data-en="Feed your curiosity.">Approfondissez votre curiosité.</h2>
+  </div>
+  <div class="blog-g reveal">
+    <div class="bcard"><div class="btag" data-fr="Histoire &amp; Culture" data-en="History &amp; Culture">Histoire &amp; Culture</div><h3 data-fr="5 secrets que les touristes ne savent pas sur La Rochelle" data-en="5 secrets tourists don't know about La Rochelle">5 secrets que les touristes ne savent pas sur La Rochelle</h3><p data-fr="Des passages cachés aux anecdotes huguenotes — plongez dans les coulisses de la cité maritime." data-en="From hidden passages to Huguenot anecdotes — dive into the backstage of this maritime city.">Des passages cachés aux anecdotes huguenotes — plongez dans les coulisses de la cité maritime.</p></div>
+    <div class="bcard"><div class="btag" data-fr="Nature &amp; Science" data-en="Nature &amp; Science">Nature &amp; Science</div><h3 data-fr="La flore maritime de Châtelaillon : ce que vous marchez sans le savoir" data-en="Châtelaillon's maritime flora: what you walk on without knowing">La flore maritime de Châtelaillon : ce que vous marchez sans le savoir</h3><p data-fr="Salicorne, orpin, panicaut des dunes… Un lexique vivant sous vos pieds." data-en="Glasswort, stonecrop, sea holly… A living lexicon beneath your feet.">Salicorne, orpin, panicaut des dunes… Un lexique vivant sous vos pieds.</p></div>
+    <div class="bcard"><div class="btag">EN · Tourism</div><h3>La Rochelle for English speakers: your complete guide to an unforgettable visit</h3><p>From shore excursions to themed private tours — how to truly experience La Rochelle as an English-speaking visitor.</p></div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p><strong>La Rochelle Off Script</strong> — <span data-fr="Guide touristique &amp; visites thématiques bilingues" data-en="Bilingual guided tours &amp; themed experiences">Guide touristique &amp; visites thématiques bilingues</span></p>
+  <p>Châtelaillon-Plage &amp; La Rochelle · Charente-Maritime (17) · <a href="mailto:contact@larochelleoffscript.fr">contact@larochelleoffscript.fr</a></p>
+  <p style="margin-top:16px;font-size:12px;opacity:.5" data-fr="© 2026 · Tous droits réservés · Mentions légales" data-en="© 2026 · All rights reserved · Legal notice">© 2026 · Tous droits réservés · Mentions légales</p>
+</footer>
+
+<script>
+(function() {
+  'use strict';
+
+  /* ── Données du ticket ── */
+  var TICKETS = {
+    fr: [
+      { title:'Visite historique<br>du centre de La Rochelle', emoji:'⚓', theme:'Histoire &amp; Architecture', duree:'1h30', groupe:'15 personnes', lang:'FR · EN', dispo:'Avr. – Oct. 2026', price:'15 €', unit:' / pers.' },
+      { title:'Pirates &amp; Légendes<br>de La Rochelle',          emoji:'🏴‍☠️', theme:'Histoire &amp; Mystère',     duree:'2h',  groupe:'12 personnes', lang:'FR · EN', dispo:'Avr. – Oct. 2026', price:'20 €', unit:' / pers.' },
+      { title:'Flore Maritime<br>de Châtelaillon-Plage',       emoji:'🌿', theme:'Botanique &amp; Nature',    duree:'1h30', groupe:'10 personnes', lang:'FR · EN', dispo:'Mai – Sept. 2026', price:'18 €', unit:' / pers.' },
+      { title:'Visite Privée<br>Sur-Mesure',                   emoji:'🔑', theme:'Thème au choix',          duree:'2h',  groupe:'1–4 personnes', lang:'FR · EN', dispo:"Toute l'année",   price:'120 €', unit:' / groupe' }
+    ],
+    en: [
+      { title:'Historic City Centre<br>of La Rochelle',   emoji:'⚓', theme:'History &amp; Architecture', duree:'1h30', groupe:'15 people', lang:'FR · EN', dispo:'Apr. – Oct. 2026', price:'15 €', unit:' / p.p.' },
+      { title:'Pirates &amp; Legends<br>of La Rochelle',  emoji:'🏴‍☠️', theme:'History &amp; Mystery',     duree:'2h',  groupe:'12 people', lang:'FR · EN', dispo:'Apr. – Oct. 2026', price:'20 €', unit:' / p.p.' },
+      { title:'Maritime Flora<br>of Châtelaillon-Plage', emoji:'🌿', theme:'Botany &amp; Nature',      duree:'1h30', groupe:'10 people', lang:'FR · EN', dispo:'May – Sept. 2026', price:'18 €', unit:' / p.p.' },
+      { title:'Private Bespoke<br>Tour',                  emoji:'🔑', theme:'Your chosen theme',      duree:'2h',  groupe:'1–4 people', lang:'FR · EN', dispo:'Year-round',        price:'120 €', unit:' / group' }
+    ]
+  };
+
+  var currentLang   = 'fr';
+  var currentTicket = 0;
+
+  /* ── Rendu du ticket ── */
+  function renderTicket(i) {
+    var d = TICKETS[currentLang][i];
+    document.getElementById('t-title').innerHTML  = d.title;
+    document.getElementById('t-emoji').textContent = d.emoji;
+    document.getElementById('t-theme').innerHTML  = d.theme;
+    document.getElementById('t-duree').textContent = d.duree;
+    document.getElementById('t-groupe').textContent = d.groupe;
+    document.getElementById('t-lang').textContent  = d.lang;
+    document.getElementById('t-dispo').textContent = d.dispo;
+    document.getElementById('t-price').innerHTML =
+      d.price + '<small style="font-family:var(--sans);font-size:14px;color:var(--ink-muted);font-weight:400">' + d.unit + '</small>';
+  }
+
+  /* ── Onglets du ticket ── */
+  document.querySelectorAll('.ttab').forEach(function(tab) {
+    tab.addEventListener('click', function() {
+      document.querySelectorAll('.ttab').forEach(function(t) { t.classList.remove('active'); });
+      tab.classList.add('active');
+      currentTicket = parseInt(tab.getAttribute('data-ticket'), 10);
+      renderTicket(currentTicket);
+    });
+  });
+
+  /* ── Traduction ── */
+  function applyLang(lang) {
+    currentLang = lang;
+
+    /* Boutons langue */
+    document.getElementById('btn-fr').classList.toggle('active', lang === 'fr');
+    document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+    document.getElementById('btn-fr').setAttribute('aria-pressed', String(lang === 'fr'));
+    document.getElementById('btn-en').setAttribute('aria-pressed', String(lang === 'en'));
+    document.documentElement.lang = lang;
+
+    /* Meta title */
+    var titleEl = document.querySelector('title');
+    if (titleEl) titleEl.textContent = titleEl.getAttribute('data-' + lang);
+
+    /* Meta description */
+    var metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) metaDesc.setAttribute('content', metaDesc.getAttribute('data-' + lang));
+
+    /* Tous les éléments traduits */
+    var attr = 'data-' + lang;
+    document.querySelectorAll('[' + attr + ']').forEach(function(el) {
+      /* Exclure title et meta (déjà traités) */
+      var tag = el.tagName.toLowerCase();
+      if (tag === 'title' || tag === 'meta') return;
+
+      var val = el.getAttribute(attr);
+      if (val === null) return;
+
+      /* innerHTML si le texte contient du HTML */
+      if (val.indexOf('<') !== -1 || val.indexOf('&') !== -1) {
+        el.innerHTML = val;
+      } else {
+        el.textContent = val;
+      }
+    });
+
+    /* Ticket */
+    renderTicket(currentTicket);
+  }
+
+  /* ── Boutons langue — event listeners (pas de onclick inline) ── */
+  document.getElementById('btn-fr').addEventListener('click', function() { applyLang('fr'); });
+  document.getElementById('btn-en').addEventListener('click', function() { applyLang('en'); });
+
+  /* ── FAQ ── */
+  document.querySelectorAll('.fq').forEach(function(fq) {
+    fq.addEventListener('click', function() {
+      fq.closest('.fi').classList.toggle('open');
+    });
+  });
+
+  /* ── Scroll reveal ── */
+  var obs = new IntersectionObserver(function(entries) {
+    entries.forEach(function(e) {
+      if (e.isIntersecting) { e.target.classList.add('in'); obs.unobserve(e.target); }
+    });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.reveal').forEach(function(el) { obs.observe(el); });
+
+  /* ── Smooth scroll ── */
+  document.querySelectorAll('a[href^="#"]').forEach(function(a) {
+    a.addEventListener('click', function(e) {
+      var target = document.querySelector(a.getAttribute('href'));
+      if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+    });
+  });
+
+  /* ── Init ── */
+  renderTicket(0);
+
+})();
+</script>
+</body>
+</html>
