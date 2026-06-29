@@ -35,7 +35,7 @@ a{color:inherit;text-decoration:none}
 /* NAV */
 #nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(255,255,255,.93);backdrop-filter:blur(14px);border-bottom:1px solid var(--border);height:64px;display:flex;align-items:center;padding:0 var(--pad-h)}
 .nav-inner{max-width:var(--mw);width:100%;margin:0 auto;display:flex;align-items:center;justify-content:space-between}
-.logo{font-family:var(--serif);font-size:19px;color:var(--ink);letter-spacing:-.01em}
+.logo{font-family:var(--serif);font-size:19px;color:var(--ink);letter-spacing:-.01em;text-decoration:none;cursor:pointer}
 .logo em{color:var(--gold);font-style:italic}
 .nav-right{display:flex;gap:12px;align-items:center}
 .nav-link{font-size:14px;font-weight:500;color:var(--ink-light);transition:color .15s;display:none}
@@ -45,8 +45,8 @@ a{color:inherit;text-decoration:none}
 
 /* LANG SWITCHER */
 .lang-switcher{display:flex;align-items:center;gap:2px;background:var(--stone);border:1px solid var(--border);border-radius:50px;padding:3px;margin-right:4px}
-.lang-btn{display:flex;align-items:center;gap:5px;padding:5px 10px;border-radius:50px;border:none;background:transparent;cursor:pointer;font-family:var(--sans);font-size:12px;font-weight:600;color:var(--ink-muted);transition:background .15s,color .15s;letter-spacing:.04em}
-.lang-btn .flag{font-size:16px;line-height:1}
+.lang-btn{display:flex;align-items:center;justify-content:center;padding:6px 10px;border-radius:50px;border:none;background:transparent;cursor:pointer;transition:background .15s;line-height:1}
+.lang-btn .flag{font-size:20px;line-height:1}
 .lang-btn.active{background:var(--white);color:var(--ink);box-shadow:0 1px 4px rgba(28,58,94,.12)}
 .lang-btn:hover:not(.active){color:var(--ink)}
 
@@ -88,7 +88,7 @@ a{color:inherit;text-decoration:none}
 
 /* STATS BAR */
 #stats-bar{background:var(--stone);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
-.stats-inner{max-width:var(--mw);margin:0 auto;padding:32px var(--pad-h);display:flex;justify-content:space-around;flex-wrap:wrap;gap:28px}
+.stats-inner{max-width:800px;margin:0 auto;padding:32px clamp(16px,4vw,48px);display:flex;justify-content:center;gap:clamp(32px,6vw,80px);flex-wrap:wrap;align-items:center}
 .stat{text-align:center}
 .stat-n{font-family:var(--serif);font-size:clamp(28px,4vw,42px);color:var(--ink);line-height:1;margin-bottom:6px}
 .stat-n em{color:var(--gold);font-style:italic}
@@ -112,7 +112,7 @@ a{color:inherit;text-decoration:none}
 /* SOLUTION */
 #solution{background:var(--stone)}
 .sol-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
-.sol-img{border-radius:var(--r-lg);overflow:hidden;aspect-ratio:4/5;background:linear-gradient(to top,rgba(28,58,94,.55) 0%,transparent 55%),url('https://images.unsplash.com/photo-1537953773345-d172ccf13cf1?w=900&q=85') center/cover;box-shadow:var(--sh-md);position:relative}
+.sol-img{border-radius:var(--r-lg);overflow:hidden;aspect-ratio:4/5;background:linear-gradient(to top,rgba(28,58,94,.55) 0%,transparent 55%),url('https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=900&q=85') center/cover;box-shadow:var(--sh-md);position:relative}
 .sol-img-caption{position:absolute;bottom:0;left:0;right:0;padding:24px;background:linear-gradient(transparent,rgba(28,58,94,.7))}
 .sol-img-caption p{font-size:13px;color:rgba(255,255,255,.85)}
 .sol-img-caption strong{display:block;font-size:16px;color:#fff;font-family:var(--serif);font-weight:400;margin-bottom:4px}
@@ -260,8 +260,7 @@ footer a{color:var(--gold)}
   .nav-right{gap:6px}
   .nav-cta{padding:8px 14px;font-size:12px}
   /* Masque le texte "FR" et "EN" à côté des drapeaux sur très petit écran */
-  .lang-btn{padding:5px 7px;font-size:0}
-  .lang-btn .flag{font-size:18px}
+  .lang-btn{padding:5px 8px}
 
   /* Hero */
   #hero{min-height:auto;padding-top:0}
@@ -279,7 +278,7 @@ footer a{color:var(--gold)}
   .ticket-title{font-size:18px}
 
   /* Stats bar */
-  .stats-inner{padding:24px 16px;gap:20px;justify-content:flex-start}
+  .stats-inner{max-width:800px;margin:0 auto;padding:32px clamp(16px,4vw,48px);display:flex;justify-content:center;gap:clamp(32px,6vw,80px);flex-wrap:wrap;align-items:center}
   .stat-n{font-size:28px}
   .stat-l{font-size:12px}
 
@@ -351,16 +350,16 @@ footer a{color:var(--gold)}
 <!-- NAV -->
 <nav id="nav">
   <div class="nav-inner">
-    <div class="logo">La Rochelle <em>Off Script</em></div>
+    <a href="#" class="logo" aria-label="La Rochelle Off Script — retour accueil" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">La Rochelle <em>Off Script</em></a>
     <div class="nav-right">
       <a href="#tours" class="nav-link" data-fr="Les visites" data-en="Our tours">Les visites</a>
       <a href="#resa"  class="nav-link" data-fr="Réservation" data-en="Book">Réservation</a>
       <div class="lang-switcher" role="group" aria-label="Language / Langue">
-        <button class="lang-btn active" id="btn-fr" data-lang="fr" aria-pressed="true">
-          <span class="flag">🇫🇷</span> FR
+        <button class="lang-btn active" id="btn-fr" data-lang="fr" aria-pressed="true" aria-label="Français">
+          <span class="flag">🇫🇷</span>
         </button>
-        <button class="lang-btn" id="btn-en" data-lang="en" aria-pressed="false">
-          <span class="flag">🇬🇧</span> EN
+        <button class="lang-btn" id="btn-en" data-lang="en" aria-pressed="false" aria-label="English">
+          <span class="flag">🇬🇧</span>
         </button>
       </div>
       <a href="#resa" class="btn btn-gold nav-cta" data-fr="Réserver" data-en="Book">Réserver</a>
@@ -430,7 +429,6 @@ footer a{color:var(--gold)}
 <div id="stats-bar">
   <div class="stats-inner">
     <div class="stat"><div class="stat-n">3 <em>M</em></div><div class="stat-l" data-fr="visiteurs / an à La Rochelle" data-en="visitors / year in La Rochelle">visiteurs / an à La Rochelle</div></div>
-    <div class="stat"><div class="stat-n"><em>0</em></div><div class="stat-l" data-fr="visite guidée en anglais à Châtelaillon" data-en="English guided tour in Châtelaillon">visite guidée en anglais à Châtelaillon</div></div>
     <div class="stat"><div class="stat-n">8</div><div class="stat-l" data-fr="thèmes exclusifs disponibles" data-en="exclusive themes available">thèmes exclusifs disponibles</div></div>
     <div class="stat"><div class="stat-n">30 <em>ans</em></div><div class="stat-l" data-fr="d'expérience en transmission" data-en="years of teaching &amp; guiding">d'expérience en transmission</div></div>
   </div>
@@ -441,7 +439,7 @@ footer a{color:var(--gold)}
   <div class="problem-intro reveal">
     <span class="eyebrow" data-fr="Le problème" data-en="The problem">Le problème</span>
     <h2 class="d2" data-fr="Vous visitez La Rochelle.<br>Mais la vivez-vous vraiment ?" data-en="You visit La Rochelle.<br>But do you truly experience it?">Vous visitez La Rochelle.<br>Mais la vivez-vous vraiment ?</h2>
-    <p class="body-md" style="margin-top:16px" data-fr="Trop de touristes. Pas assez d'histoires. Et si vous ne parlez pas français, la ville reste à moitié fermée." data-en="Too many tourists. Too few real stories. And if you don't speak French, the city stays half-closed to you.">Trop de touristes. Pas assez d'histoires. Et si vous ne parlez pas français, la ville reste à moitié fermée.</p>
+    <p class="body-md" style="margin-top:16px" data-fr="La Rochelle et Châtelaillon regorgent d'histoires fascinantes, de paysages uniques, de secrets bien gardés. Il suffit de savoir où chercher — et qui peut vous guider." data-en="La Rochelle and Châtelaillon are full of fascinating stories, unique landscapes, and well-kept secrets. You just need to know where to look — and who can guide you.">La Rochelle et Châtelaillon regorgent d'histoires fascinantes, de paysages uniques, de secrets bien gardés. Il suffit de savoir où chercher — et qui peut vous guider.</p>
   </div>
   <div class="problem-grid reveal">
     <div class="pain"><div class="pain-mark">🚌</div><h3 data-fr="40 personnes derrière un drapeau" data-en="40 people following a flag">40 personnes derrière un drapeau</h3><p data-fr="Les grandes visites ressemblent à des convois. Vous entendez un tiers de ce qui est dit. La visite est terminée avant d'avoir commencé." data-en="Large tours feel like convoys. You hear a third of what's said. The visit is over before it really begins.">Les grandes visites ressemblent à des convois. Vous entendez un tiers de ce qui est dit.</p></div>
@@ -493,7 +491,7 @@ footer a{color:var(--gold)}
     <div class="ben"><span class="ben-icon">🔍</span><h3 data-fr="Des coulisses invisibles" data-en="Hidden backstage stories">Des coulisses invisibles</h3><p data-fr="Rues cachées, symboles oubliés, anecdotes de résidents. Vous vivez La Rochelle de l'intérieur." data-en="Hidden streets, forgotten symbols, residents' anecdotes. You experience La Rochelle from the inside.">Rues cachées, symboles oubliés, anecdotes de résidents.</p></div>
     <div class="ben"><span class="ben-icon">🌿</span><h3 data-fr="Une expertise botanique rare" data-en="Rare botanical expertise">Une expertise botanique rare</h3><p data-fr="La visite Flore Maritime est co-construite avec une chercheuse en botanique maritime. Une lecture du littoral que personne d'autre ne propose." data-en="The Maritime Flora tour is co-designed with a marine botany researcher. A coastal reading no one else offers.">La visite Flore Maritime est co-construite avec une chercheuse en botanique maritime.</p></div>
     <div class="ben"><span class="ben-icon">🗺️</span><h3 data-fr="Un rythme à votre mesure" data-en="A pace that suits you">Un rythme à votre mesure</h3><p data-fr="Pas de convoi. Des échanges, des questions, de la curiosité partagée." data-en="No convoy. Real exchanges, questions, shared curiosity. Time to breathe.">Pas de convoi. Des échanges, des questions, de la curiosité partagée.</p></div>
-    <div class="ben"><span class="ben-icon">🇬🇧</span><h3 data-fr="Accessible en anglais" data-en="Fully available in English">Accessible en anglais</h3><p data-fr="Pour la première fois, La Rochelle et Châtelaillon s'ouvrent pleinement aux visiteurs anglophones." data-en="For the first time, La Rochelle and Châtelaillon fully open their doors to English-speaking visitors.">Pour la première fois, La Rochelle s'ouvre pleinement aux visiteurs anglophones.</p></div>
+    <div class="ben"><span class="ben-icon">🇬🇧 EN</span><h3 data-fr="Accessible en anglais" data-en="Fully available in English">Accessible en anglais</h3><p data-fr="Pour la première fois, La Rochelle et Châtelaillon s'ouvrent pleinement aux visiteurs anglophones." data-en="For the first time, La Rochelle and Châtelaillon fully open their doors to English-speaking visitors.">Pour la première fois, La Rochelle s'ouvre pleinement aux visiteurs anglophones.</p></div>
     <div class="ben"><span class="ben-icon">👨‍👩‍👧</span><h3 data-fr="Adaptée à tous les profils" data-en="Suitable for everyone">Adaptée à tous les profils</h3><p data-fr="Couple, famille, groupe d'amis, séminaire, scolaires, croisiéristes. Chaque visite peut être modulée." data-en="Couples, families, friend groups, seminars, school trips, cruise passengers — every tour can be adapted.">Couple, famille, groupe d'amis, séminaire, scolaires, croisiéristes.</p></div>
     <div class="ben"><span class="ben-icon">🎭</span><h3 data-fr="Des thèmes qu'on ne trouve nulle part" data-en="Themes you'll find nowhere else">Des thèmes qu'on ne trouve nulle part</h3><p data-fr="Pirates, histoire des femmes, visites nocturnes, botanique — des récits introuvables en circuit standard." data-en="Pirates, women's history, night tours, botany — stories unavailable in any standard circuit.">Pirates, histoire des femmes, visites nocturnes, botanique.</p></div>
   </div>
