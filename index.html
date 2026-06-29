@@ -238,21 +238,111 @@ footer a{color:var(--gold)}
 .reveal{opacity:0;transform:translateY(20px);transition:opacity .5s,transform .5s}
 .reveal.in{opacity:1;transform:none}
 
-/* RESPONSIVE */
+/* RESPONSIVE — tablette */
 @media(max-width:900px){
-  .hero-grid,.sol-grid{grid-template-columns:1fr;gap:48px}
+  .hero-grid,.sol-grid{grid-template-columns:1fr;gap:40px}
   .sol-img{aspect-ratio:16/9;max-height:280px}
   .diff-grid,.problem-grid{grid-template-columns:1fr}
   .tour-list{grid-template-columns:1fr}
   .offer-cols{grid-template-columns:1fr}
   .steps{grid-template-columns:1fr 1fr;gap:32px}
   .steps::after{display:none}
+  .testi-grid{grid-template-columns:1fr}
+  .blog-g{grid-template-columns:1fr}
 }
+
+/* RESPONSIVE — mobile */
 @media(max-width:640px){
-  .ben-grid,.testi-grid,.blog-g{grid-template-columns:1fr}
-  .offer-card-body,.offer-card-head{padding:28px 24px}
+
+  /* Nav : logo compact, masque les liens texte, CTA plus petit */
+  #nav{padding:0 16px;height:56px}
+  .logo{font-size:15px}
+  .nav-right{gap:6px}
+  .nav-cta{padding:8px 14px;font-size:12px}
+  /* Masque le texte "FR" et "EN" à côté des drapeaux sur très petit écran */
+  .lang-btn{padding:5px 7px;font-size:0}
+  .lang-btn .flag{font-size:18px}
+
+  /* Hero */
+  #hero{min-height:auto;padding-top:16px}
+  .hero-grid{padding:40px 16px 48px;gap:32px}
+  .d1{font-size:clamp(32px,9vw,48px)}
+  .hero-left .body-lg{font-size:16px;margin-bottom:28px}
+  .btn-group{flex-direction:column;gap:10px}
+  .btn-group .btn{width:100%;justify-content:center}
+  .hero-proof{gap:16px;margin-top:32px;padding-top:24px}
+  .proof-item{font-size:12px}
+
+  /* Ticket */
+  .ticket-tabs{gap:6px}
+  .ttab{padding:5px 10px;font-size:11px}
+  .ticket-title{font-size:18px}
+
+  /* Stats bar */
+  .stats-inner{padding:24px 16px;gap:20px;justify-content:flex-start}
+  .stat-n{font-size:28px}
+  .stat-l{font-size:12px}
+
+  /* Sections padding */
+  .sec{padding:56px 16px}
+  #process{padding:56px 16px}
+  #resa{padding:56px 16px}
+  #cta-final{padding:56px 16px}
+
+  /* Titres */
+  .d2{font-size:clamp(24px,7vw,36px)}
+  .d3{font-size:clamp(18px,5vw,24px)}
+
+  /* Problème */
+  .problem-grid{gap:2px}
+  .pain{padding:24px 20px}
+
+  /* Solution */
+  .sol-grid{gap:28px}
+  .sol-img{aspect-ratio:4/3;max-height:220px}
+  .sol-list li{padding:10px 0;font-size:14px}
+
+  /* Bénéfices */
+  .ben-grid{grid-template-columns:1fr}
+  .ben{padding:24px 20px}
+
+  /* Visites */
+  .tour-list{grid-template-columns:1fr}
+  .tour-body-t h3{font-size:17px}
+
+  /* Processus */
   .steps{grid-template-columns:1fr}
-  .cal-box{padding:32px 24px}
+  .process-head{margin-bottom:40px}
+
+  /* Offre */
+  .offer-cols{grid-template-columns:1fr}
+  .offer-card-body,.offer-card-head{padding:24px 20px}
+
+  /* Différenciation */
+  .diff-grid{grid-template-columns:1fr}
+  .diff-c{padding:24px 20px;gap:14px}
+  .diff-icon-w{width:40px;height:40px;font-size:18px}
+
+  /* Témoignages */
+  .testi-grid{grid-template-columns:1fr}
+
+  /* FAQ */
+  .faqs{max-width:100%}
+  .fq h3{font-size:15px}
+  .fa p{font-size:14px}
+
+  /* Réservation */
+  .resa-head h2{font-size:clamp(22px,6vw,32px)}
+  .cal-box{padding:24px 16px}
+
+  /* CTA final */
+  #cta-final .btn{font-size:15px;padding:15px 28px;width:100%;justify-content:center}
+
+  /* Blog */
+  .blog-g{grid-template-columns:1fr}
+
+  /* Footer */
+  footer{padding:28px 16px}
 }
 </style>
 </head>
@@ -273,7 +363,7 @@ footer a{color:var(--gold)}
           <span class="flag">🇬🇧</span> EN
         </button>
       </div>
-      <a href="#resa" class="btn btn-gold nav-cta" data-fr="Réserver une visite" data-en="Book a tour">Réserver une visite</a>
+      <a href="#resa" class="btn btn-gold nav-cta" data-fr="Réserver" data-en="Book">Réserver</a>
     </div>
   </div>
 </nav>
