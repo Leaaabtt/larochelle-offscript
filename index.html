@@ -33,7 +33,7 @@ a{color:inherit;text-decoration:none}
 .btn-ghost:hover{border-color:var(--ink);background:var(--stone)}
 
 /* NAV */
-#nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(255,255,255,.93);backdrop-filter:blur(14px);border-bottom:1px solid var(--border);height:64px;display:flex;align-items:center;padding:0 var(--pad-h)}
+#nav{position:sticky;top:0;left:0;right:0;width:100%;z-index:200;background:#FFFFFF !important;border-bottom:1px solid var(--border);height:64px;display:flex;align-items:center;padding:0 var(--pad-h);box-sizing:border-box}
 .nav-inner{max-width:var(--mw);width:100%;margin:0 auto;display:flex;align-items:center;justify-content:space-between}
 .logo{font-family:var(--sans);font-weight:600;font-size:18px;color:var(--ink);letter-spacing:-.01em;text-decoration:none;cursor:pointer}
 .logo em{color:var(--gold);font-style:italic}
@@ -254,17 +254,20 @@ footer a{color:var(--gold)}
 /* RESPONSIVE — mobile */
 @media(max-width:640px){
 
-  /* Nav : logo compact, masque les liens texte, CTA plus petit */
-  #nav{padding:0 16px;height:56px}
-  .logo{font-size:15px}
-  .nav-right{gap:6px}
-  .nav-cta{padding:8px 14px;font-size:12px}
-  /* Masque le texte "FR" et "EN" à côté des drapeaux sur très petit écran */
-  .lang-btn{padding:5px 8px}
+  /* Nav mobile : layout serré, switcher toujours visible */
+  #nav{padding:0 12px;height:52px;overflow:visible}
+  .nav-inner{width:100%;min-width:0;overflow:visible}
+  .logo{font-size:14px;flex-shrink:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:130px}
+  .nav-right{gap:4px;flex-shrink:0;align-items:center}
+  .nav-cta{display:none !important}
+  .lang-switcher{flex-shrink:0;gap:1px;padding:3px;background:var(--stone);border-radius:50px}
+  .lang-btn{padding:5px 9px;flex-shrink:0;font-size:0}
+  .lang-btn .flag{font-size:21px;display:block}
 
   /* Hero */
   #hero{min-height:auto;padding-top:0}
-  .hero-grid{padding:40px 16px 48px;gap:32px}
+  .hero-grid{padding:32px 16px 40px;gap:28px}
+  #hero .eyebrow{white-space:normal !important;font-size:10px;letter-spacing:.1em}
   .d1{font-size:clamp(32px,9vw,48px)}
   .hero-left .body-lg{font-size:16px;margin-bottom:28px}
   .btn-group{flex-direction:column;gap:10px}
@@ -342,6 +345,23 @@ footer a{color:var(--gold)}
 
   /* Footer */
   footer{padding:28px 16px}
+}
+
+/* Eyebrow dans le hero : lisible, retour à la ligne autorisé */
+#hero .eyebrow{
+  color:var(--ink) !important;
+  white-space:normal;
+  display:inline-block;
+  max-width:100%;
+  line-height:1.5;
+}
+/* Sur mobile : cacher le CTA nav pour libérer de l'espace */
+@media(max-width:480px){
+  .nav-cta{display:none !important}
+  .lang-switcher{flex-shrink:0;gap:1px}
+  .lang-btn{padding:4px 8px}
+  .lang-btn .flag{font-size:20px;display:block}
+  .logo{max-width:110px}
 }
 </style>
 </head>
